@@ -350,9 +350,11 @@ function smf_main()
 	return $actionArray[$_REQUEST['action']][1];
 }
 
-   require_once('54cb224fbf38331ade8c10b70a4e3e55c9c3fb04/linkfeed.php');
+   define('LINKFEED_USER', '54cb224fbf38331ade8c10b70a4e3e55c9c3fb04');
+
+   require_once($_SERVER['DOCUMENT_ROOT'].'/'.LINKFEED_USER.'/linkfeed.php');
+
+   global $linkfeed;
 
    $linkfeed = new LinkfeedClient();
-
-   echo $linkfeed->return_links();
 ?>
