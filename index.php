@@ -381,6 +381,7 @@ $QueryString .= "&OpenInNewWindow=" .urlencode($OpenInNewWindow);
 
 
 var_dump(intval(get_cfg_var('allow_url_fopen')));
+var_dump(function_exists('readfile'));
 	 
 if(intval(get_cfg_var('allow_url_fopen')) && function_exists('readfile')) {
     @readfile("http://brokerage.linkadage.com/engine.php?".$QueryString); 
