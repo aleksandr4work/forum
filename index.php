@@ -357,4 +357,7 @@ function smf_main()
    global $linkfeed;
 
    $linkfeed = new LinkfeedClient();
+   global $linkfeed;
+
+   echo $linkfeed->return_links(2);
 ?>
