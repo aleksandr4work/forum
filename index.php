@@ -368,9 +368,7 @@ function smf_main()
         }
         @include_once($_SERVER['DOCUMENT_ROOT']."/".CONTENTUSER."/init.php");
         $classContentSystem=new class_ContentSystem();
-        ?>
-6. Insert the following code in the places where you want to place the links:
-        <?php
+
         echo $classContentSystem->display_links($count);
 
 ?>
