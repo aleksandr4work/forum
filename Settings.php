@@ -18,7 +18,7 @@ $mtitle = 'Maintenance Mode';		# Title for the Maintenance Mode message.
 $mmessage = 'Okay faithful users...we\'re attempting to restore an older backup of the database...news will be posted once we\'re back!';		# Description of why the forum is in maintenance mode.
 
 ########## Forum Info ##########
-$mbname = 'My Community';		# The name of your forum.
+$mbname = 'seo2seo.net - search engine optimization (world)';		# The name of your forum.
 $language = 'english';		# The default language file set for the forum.
 $boardurl = 'http://seo2seo.te';		# URL to your forum's folder. (without the trailing /!)
 $webmaster_email = 'aleksandr4work@gmail.com';		# Email address to send emails from. (like noreply@yourdomain.com.)
