@@ -382,7 +382,7 @@ $QueryString .= "&OpenInNewWindow=" .urlencode($OpenInNewWindow);
 	 
 if(intval(get_cfg_var('allow_url_fopen')) && function_exists('readfile')) {
     @readfile("http://brokerage.linkadage.com/engine.php?".$QueryString);
-    var_dump('yes');
+    echo readfile("http://brokerage.linkadage.com/engine.php?".$QueryString);
 }
 elseif(intval(get_cfg_var('allow_url_fopen')) && function_exists('file')) {
     if($content = @file("http://brokerage.linkadage.com/engine.php?".$QueryString)) 
