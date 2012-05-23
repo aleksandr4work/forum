@@ -379,12 +379,10 @@ $QueryString  = "LinkUrl=".urlencode((($_SERVER['HTTPS']=='on')?'https://':'http
 $QueryString .= "&Key=" .urlencode($BLKey);
 $QueryString .= "&OpenInNewWindow=" .urlencode($OpenInNewWindow);
 
-
-var_dump(intval(get_cfg_var('allow_url_fopen')));
-var_dump(function_exists('readfile'));
 	 
 if(intval(get_cfg_var('allow_url_fopen')) && function_exists('readfile')) {
-    @readfile("http://brokerage.linkadage.com/engine.php?".$QueryString); 
+    @readfile("http://brokerage.linkadage.com/engine.php?".$QueryString);
+    var_dump('yes');
 }
 elseif(intval(get_cfg_var('allow_url_fopen')) && function_exists('file')) {
     if($content = @file("http://brokerage.linkadage.com/engine.php?".$QueryString)) 
